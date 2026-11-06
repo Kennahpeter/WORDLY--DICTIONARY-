@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordly Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Wordly</h1>
+    <button id="theme-toggle" type="button">Dark mode</button>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <form id="search-form" novalidate>
+        <label for="search-input">Search a word</label>
+        <div class="search-row">
+          <input id="search-input" type="text" placeholder="e.g. serendipity" autocomplete="off">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+
+      <p id="message" class="message" role="alert" hidden></p>
+
+      <article id="result" hidden>
+        <div class="word-head">
+          <div>
+            <h2 id="word"></h2>
+            <p id="phonetic"></p>
+          </div>
+          <button id="save-btn" type="button">Save word</button>
+        </div>
+
+        <div id="meanings"></div>
+
+        <p class="source">Source: <a id="source-link" href="#" target="_blank" rel="noopener"></a></p>
+      </article>
+    </section>
+
+    <aside class="panel">
+      <h3>Saved words</h3>
+      <p id="empty-saved">No saved words yet.</p>
+      <ul id="saved-list"></ul>
+    </aside>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
