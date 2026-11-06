@@ -19,4 +19,4 @@ what it does
   problems and no internet
 - Saved words and theme are remembered with local storage 
 
-
+The Dictionary is live at (https://kennahpeter.github.io/WORDLY--DICTIONARY-/)
